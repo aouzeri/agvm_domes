@@ -66,7 +66,7 @@ source ~/.bashrc
 See [INSTALL.md](INSTALL.md) for more details.
 
 
-## Data visualiwation and post-processing
+## Data visualisation and post-processing
 
 At each timestep X, the code outputs a solutionX.vtm file and one solutionX.Y.vtu file per processor Y used which stores the values for the different degrees of freedom. For example, with 4 processors, step 89 outputs solution89.vtm and solution89.0.vtu, solution89.1.vtu, solution89.2.vtu, solution89.3.vtu, solution89.4.vtu. To visualize the results we use [Paraview](https://www.paraview.org/) which is an open source post-processing visualization engine freely available for download. 
 We used version 5.11.2 available [here](https://www.paraview.org/download/) and we provide a [state file](post-processing/state.pvsm) which loads the solution*.vtm files and provides a cross section view of the the dome at different timesteps. 
